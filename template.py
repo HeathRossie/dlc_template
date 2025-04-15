@@ -32,7 +32,7 @@ config_path = 'path to yaml file'
 dlc.extract_frames(config_path, 'automatic', 'kmeans')
 
 # label the data
-dlc.label_frames(config_path)
+run 'napari' on your Anaconda prompt
 
 # check labels
 #dlc.check_labels(config_path)
