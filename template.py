@@ -1,13 +1,3 @@
-# These are needed for RTX 20- series
-# https://www.reddit.com/r/deeplearning/comments/b5ln56/error_failed_to_get_convolution_algorithm_shows/
-import tensorflow as tf
-from keras.backend import tensorflow_backend
-
-config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
-session = tf.Session(config=config)
-tensorflow_backend.set_session(session)
-
-
 # start dlc
 import deeplabcut as dlc
 
